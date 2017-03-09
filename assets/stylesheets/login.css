@@ -1,0 +1,23 @@
+#login-page {
+  background: #1976d2;
+  margin: 0;
+  height: 100vh;
+}
+
+#login-page .card-panel {
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#login-page .input-field,
+#login-page .input-field label {
+  color: #1976d2;
+}
+
+#login-page input:focus {
+  border-bottom: 1px solid #1976d2;
+  box-shadow: 0 1px 0 0 #1976d2;
+}

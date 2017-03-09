@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="App" lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Robcar</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="assets/stylesheets/login.css">
+    <link rel="stylesheet" href="assets/stylesheets/dashboard.css">
+
+    <!-- Lib -->
+    <link rel="stylesheet" href="assets/lib/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <ui-view></ui-view>
+
+    <!-- Lib -->
+    <script src="assets/lib/angular/angular.min.js"></script>
+    <script src="assets/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="assets/lib/angular-materializecss-autocomplete/angular-materializecss-autocomplete.js"></script>
+    
+    <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/lib/materialize/dist/js/materialize.min.js"></script>
+
+    <!-- App -->
+    <script src="assets/scripts/app.modules.js"></script>
+    <script src="assets/scripts/app.routes.js"></script>
+
+    <!-- Login -->
+    <script src="assets/scripts/app/login/login.controller.js"></script>
+
+    <!-- Dashboard -->
+    <script src="assets/scripts/app/dashboard/dashboard.controller.js"></script>
+
+    <!-- Save OS -->
+    <script src="assets/scripts/app/dashboard/os/save/os-save.controller.js"></script>
+    <script src="assets/scripts/app/dashboard/os/save/os-save.service.js"></script>
+
+    <!-- List OS -->
+    <script src="assets/scripts/app/dashboard/os/list/os-list.controller.js"></script>
+    <script src="assets/scripts/app/dashboard/os/list/os-list.service.js"></script>
+    
+    <!-- Save Vehicles -->
+    <script src="assets/scripts/app/dashboard/vehicles/save/vehicles-save.controller.js"></script>
+    <script src="assets/scripts/app/dashboard/vehicles/save/vehicles-save.service.js"></script>
+
+    <!-- List Vehicles -->
+    <script src="assets/scripts/app/dashboard/vehicles/list/vehicles-list.controller.js"></script>
+    <script src="assets/scripts/app/dashboard/vehicles/list/vehicles-list.service.js"></script>
+
+    <!-- Save Users -->
+    <script src="assets/scripts/app/dashboard/users/save/users-save.controller.js"></script>
+    <script src="assets/scripts/app/dashboard/users/save/users-save.service.js"></script>
+
+    <!-- List Users -->
+    <script src="assets/scripts/app/dashboard/users/list/users-list.controller.js"></script>
+    <script src="assets/scripts/app/dashboard/users/list/users-list.service.js"></script>
+  </body>
+</html>

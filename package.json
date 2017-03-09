@@ -1,0 +1,16 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/time2/robcar.git"
+  },
+  "homepage": "https://gitlab.com/time2/robcar#README",
+  "devDependencies": {
+    "bower": "^1.7.9"
+  }
+}

@@ -1,0 +1,55 @@
+<section class="dashboard-container" ng-controller="VehiclesSaveController as vm">
+  <h4 class="header">Novo Veículo</h4>
+
+  <form class="col s12">
+    <div class="row">
+      <div class="col s6">
+       <auto-complete class="col s10" model="vm.cliente" func="vm.listClients" property="nome" label="Proprietário"></auto-complete>
+      </div>
+
+      <div class="input-field col s6">
+         <input id="status" class=" col s10" type="checkbox" ng-model="vm.vehicle.status">
+         <label for="status">Liberado</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="model" class=" col s10" type="text" ng-model="vm.vehicle.modelo">
+        <label for="model">Modelo</label>
+      </div>
+
+      <div class="input-field col s6">
+          <input id="brand" class=" col s10" type="text" ng-model="vm.vehicle.marca">
+          <label for="brand">Marca</label>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s6">
+          <input id="color" class=" col s10" type="text" ng-model="vm.vehicle.cor">
+          <label for="color">Cor</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input id="plate" class=" col s10" type="text" ng-model="vm.vehicle.placa">
+          <label for="plate">Placa</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s6">
+          <input id="year" class=" col s10" type="text" ng-model="vm.vehicle.ano">
+          <label for="year">Ano</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="fuel" class=" col s10" type="text" ng-model="vm.vehicle.combustivel">
+          <label for="fuel">Combustível</label>
+        </div>
+    </div>
+
+    <div class="row">
+      <a class="waves-effect waves-light btn blue darken-2 botao-sub" ng-click="vm.saveVehicle()">Cadastrar</a>
+    </div>
+  </form>
+</section>

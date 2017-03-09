@@ -1,0 +1,48 @@
+<section class="dashboard-container" ng-controller="UsersListController as vm">
+  <h4 class="header">Usuários cadastrados</h4>
+
+  <div class="dashboard-search">
+    <div class="row">
+      <div class="dashboard-search-container-input">
+        <div class="dashboard-search-input input-field col s12">
+          <input id="search" type="text" class="validate" ng-model="filterUsers">
+          <label for="search">Pesquisar</label>
+        </div>
+      </div>
+
+      <div class="dashboard-search-container-button">
+        <a ui-sref="dashboard.users-create" class="dashboard-search-button waves-effect waves-light btn blue darken-2">Novo Usuário</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="bordered-table">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <table class="bordered">
+          <thead>
+            <tr>
+              <th data-field="usuario">Usuário</th>
+              <th class="center" data-field="actions ">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="users in vm.users | filter: filterUsers">
+              <td>{{ users.nome }}</td>
+              <td class="center">
+                <a class="waves-effect waves-light btn blue darken-2" ng-click="vm.editUser(users.id)">
+                  <i class="material-icons small">mode_edit</i>
+                </a>
+                
+                <a class="waves-effect waves-light btn red darken-2" ng-click="vm.deleteUser(users.id)">
+                  <i class="material-icons small">delete</i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

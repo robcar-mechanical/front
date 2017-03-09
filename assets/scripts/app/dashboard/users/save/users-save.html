@@ -1,0 +1,23 @@
+<section class="dashboard-container" ng-controller="UsersSaveController as vm">
+  <h4 class="header" ng-bind="vm.messages.title"></h4>
+
+  <form class="col s12">
+    <div class="row">
+      <div class="s12">
+        <div class="input-field col s12">
+          <input id="name" class="validate" type="text" ng-model="vm.user.nome">
+          <label for="name" ng-class="{'active': vm.param}">Nome</label>
+        </div>
+      </div>
+    </div>
+
+    <div ng-hide="vm.param" class="row">
+      <div class="input-field col s12">
+        <input id="password" class="validate" type="password" ng-model="vm.user.senha">
+        <label for="password">Senha</label>
+      </div>
+    </div>
+
+    <a class="waves-effect waves-light btn blue darken-2" ng-click="vm.saveUser()" ng-bind="vm.messages.button"></a>
+  </form>
+</section>
