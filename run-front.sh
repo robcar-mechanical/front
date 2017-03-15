@@ -1,11 +1,12 @@
 #!/bin/bash
-echo "Informe seu user, utilizado no Gitlab"
+# Esse arquivo deve estar dentro da pasta robcar-mechanical
+echo "Informe seu user do github:"
 read user;
-echo "Informe seu email, utilizado no Gitlab "
+echo "Informe seu e-mail do github "
 read email;
-echo "Informe sua senha, utilizado no Gitlab "
+echo "Informe sua senha do github "
 read senha;
-# Configura name e email do user utilizado no Gitlab
+# Configura name e email do user utilizado no github
 git config --global user.name "$user"
 git config --global user.email "$email"
 git config --global user.senha "$senha"
@@ -21,7 +22,6 @@ git checkout develop
 npm set strict-ssl false
 echo "instalando o bower"
 npm install -g bower
-cd front
 bower install
 start sh.exe --login -i
 echo "Finalizado com sucesso!"
